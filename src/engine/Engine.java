@@ -15,8 +15,8 @@ public class Engine implements Runnable {
 
     //region Display
 
-    private int width = 270, height = 180;
-    private float scale = 1f;
+    private int width = 100, height = 100;
+    private float scale = 8f;
     private String title = "Conway's Game of Life";
 
     //endregion

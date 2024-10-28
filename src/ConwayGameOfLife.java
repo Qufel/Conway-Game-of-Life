@@ -39,6 +39,18 @@ public class ConwayGameOfLife extends AbstractEngine {
             isPlaying = !isPlaying;
         }
 
+        if (engine.getInput().isKeyDown(KeyEvent.VK_ESCAPE)) {
+
+            for (int y = 0; y < engine.getHeight(); y++) {
+                for (int x = 0; x < engine.getWidth(); x++) {
+                    positions[x][y] = false;
+                    newPositions[x][y] = false;
+                }
+            }
+
+        }
+
+
         if (isPlaying) {
 
             //TODO: conway game of life
